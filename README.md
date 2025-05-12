@@ -20,5 +20,21 @@ step 3: after install all requirements, download the YTD.py and copy to document
 cd ~/Documents
 wget https://github.com/manir-devs/YTD/raw/main/YTD.py
 wget https://github.com/manir-devs/YTD/raw/main/icon.png
+chmod +x ~/Documents/YTD.py
 
 ```
+step 4: Create desktop entry by typing this command..
+```bash
+nano ~/.local/share/applications/ytd.desktop
+```
+Then paste this full code:
+```bash
+[Desktop Entry]
+Name=YT Downloader Linux Edition 😎
+Exec=python3 /home/$USER/Documents/YTD.py
+Icon=/home/$USER/Documents/icon.png
+Type=Application
+Terminal=false
+Categories=Utility;
+```
+Done! enjoy
