@@ -1,5 +1,5 @@
 # YTD
-YouTube Video Downloader For Linux. Download YouTube video for free, easily.
+YouTube Video Downloader For Linux. [FULL GUI SUPPORT] Download YouTube video for free, easily.
 
 For Linux,
 step 1: Open terminal and paste this:
