@@ -27,14 +27,20 @@ step 4: Create desktop entry by typing this command..
 ```bash
 nano ~/.local/share/applications/ytd.desktop
 ```
-Then paste this full code:
+Then paste this full code, replace <YOUR USERNAME> with your username
 ```bash
 [Desktop Entry]
 Name=YT Downloader Linux Edition 😎
-Exec=python3 /home/$USER/Documents/YTD.py
-Icon=/home/$USER/Documents/icon.png
+Exec=python3 /home/<YOUR USERNAME>/Documents/YTD.py
+Icon=/home/<YOUR USERNAME>/Documents/icon.png
 Type=Application
 Terminal=false
 Categories=Utility;
+```
+then, paste this code to copy desktop icon to desktop
+```bash
+cp ~/.local/share/applications/ytd.desktop ~/Desktop/
+chmod +x ~/Desktop/ytd.desktop
+gio set ~/Desktop/ytd.desktop metadata::trusted true
 ```
 Done! enjoy
